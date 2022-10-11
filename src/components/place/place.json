@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_place_places",
+  "info": {
+    "displayName": "Place",
+    "icon": "ambulance",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "place1": {
+      "type": "boolean"
+    },
+    "place2": {
+      "type": "boolean"
+    },
+    "place3": {
+      "type": "boolean"
+    },
+    "place4": {
+      "type": "boolean"
+    },
+    "place5": {
+      "type": "boolean"
+    }
+  }
+}

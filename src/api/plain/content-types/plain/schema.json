@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plains",
+  "info": {
+    "singularName": "plain",
+    "pluralName": "plains",
+    "displayName": "Plain",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "UID": {
+      "type": "uid",
+      "targetField": "Name"
+    },
+    "sity_to": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sity.sity",
+      "inversedBy": "plains"
+    },
+    "sity_end": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sity.sity",
+      "inversedBy": "plainEnds"
+    },
+    "Price": {
+      "type": "biginteger"
+    },
+    "PriceSale": {
+      "type": "biginteger"
+    },
+    "TimeArrivalStart": {
+      "type": "string"
+    },
+    "TimeArrivalEnd": {
+      "type": "string"
+    },
+    "DotStart": {
+      "type": "string"
+    },
+    "DotEnd": {
+      "type": "string"
+    },
+    "Places": {
+      "type": "component",
+      "repeatable": false,
+      "component": "place.place"
+    }
+  }
+}
