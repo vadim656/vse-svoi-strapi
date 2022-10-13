@@ -53,6 +53,12 @@
       "type": "component",
       "repeatable": false,
       "component": "place.place"
+    },
+    "poezdkas": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::poezdka.poezdka",
+      "inversedBy": "plains"
     }
   }
 }

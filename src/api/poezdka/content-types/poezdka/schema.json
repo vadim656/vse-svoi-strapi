@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "poezdkas",
+  "info": {
+    "singularName": "poezdka",
+    "pluralName": "poezdkas",
+    "displayName": "Поездка",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Data": {
+      "type": "date"
+    },
+    "plains": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::plain.plain",
+      "mappedBy": "poezdkas"
+    },
+    "UID": {
+      "type": "uid"
+    }
+  }
+}
