@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_ostanovki_ostanovkis",
+  "info": {
+    "displayName": "Ostanovki"
+  },
+  "options": {},
+  "attributes": {
+    "StartDot": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::address.address"
+    },
+    "EndDot": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::address.address"
+    }
+  }
+}
